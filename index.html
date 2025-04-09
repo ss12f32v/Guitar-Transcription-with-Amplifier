@@ -1460,6 +1460,17 @@
   document.querySelector('.modal-background').addEventListener('click', () => {
     document.getElementById('figure-modal').classList.remove('is-active');
   });
+  
+// Ensure only one audio element plays at a time
+document.addEventListener('play', function(e) {
+  const audios = document.querySelectorAll('audio');
+  audios.forEach(audio => {
+    if (audio !== e.target) {
+      audio.pause();
+    }
+  });
+}, true);
+  
 </script>
 
   </body>
