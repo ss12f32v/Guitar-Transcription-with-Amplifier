@@ -155,8 +155,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Transcribing electric guitar recordings is challenging due to the scarcity of diverse datasets and the complex tone-related variations introduced by amplifiers, cabinets, and effect pedals. To address these issues, we introduce EGDB-PG, a novel dataset designed to capture a wide range of tone-related characteristics across various amplifier-cabinet configurations. In addition, we propose the Tone-informed Transformer (TIT), a Transformer-based transcription model enhanced with a tone embedding mechanism that leverages learned representations to improve the model’s adaptability to tone-related nuances. Experiments demonstrate that TIT, trained on EGDB-PG-PG, outperforms existing baselines across diverse amplifier types, with transcription accuracy improvements driven by the dataset’s diversity and the tone embedding technique. Through detailed benchmarking and ablation studies, we evaluate the impact of tone augmentation, content augmentation, audio normalization, and tone embedding on transcription performance. This work advances electric guitar transcription by overcoming limitations in dataset diversity and tone modeling, providing a robust foundation for future research.      </h2>
-          </p>
+Electric guitar recordings pose unique challenges for automatic music transcription due to the rich tone-related variations arisen from the employed guitar amplifiers, cabinets, and effect pedals, which collectively alter the sound character the guitar produces. Transcription models trained on small datasets with a limited palette of guitar tones may not generalize well to unseen tones. Due to the scarcity of labeled data, however, little work has thoroughly studied the effect of tones in electric guitar transcription. In this paper, we present a prototype benchmark and evaluation protocol for electric guitar transcription, training our transcription models using up to 256 presets of commercial-grade amplifier-cabinet combinations with different gain ranges, and testing the models on an unseen set of 6 out-of-domain presets. Moreover, we propose a new Transformer-based transcription model named tone-informed hierarchy Transformer (Ti-hFT) that incorporates representations of guitar tones as conditions to improve the model's adaptability to tone-related nuances. Experiments demonstrate the effectiveness of this tone-informed model over baselines and prior models, as well as the importance of increasing the tone and content variation of the training data for better generalizability.          </p>
         </div>
       </div>
     </div>
@@ -207,7 +206,7 @@
           <thead>
             <tr>
               <th>Label</th>
-              <th>TIT</th>
+              <th>Ti-hFT</th>
               <th>EGDB-PG finetuned hFT-Transformer</th>
               <th>MT3-guitar&piano</th>
             </tr>
@@ -393,7 +392,7 @@
           <thead>
             <tr>
               <th>Label</th>
-              <th>TIT</th>
+              <th>Ti-hFT</th>
               <th>EGDB-PG finetuned hFT-Transformer</th>
               <th>MT3-guitar&piano</th>
             </tr>
@@ -581,7 +580,7 @@
           <thead>
             <tr>
               <th>Label</th>
-              <th>TIT</th>
+              <th>Ti-hFT</th>
               <th>EGDB-PG finetuned hFT-Transformer</th>
               <th>MT3-guitar&piano</th>
             </tr>
@@ -764,7 +763,7 @@
           <thead>
             <tr>
               <th>Label</th>
-              <th>TIT</th>
+              <th>Ti-hFT</th>
               <th>EGDB-PG finetuned hFT-Transformer</th>
               <th>MT3-guitar&piano</th>
             </tr>
@@ -951,7 +950,7 @@
           <thead>
             <tr>
               <th>Label</th>
-              <th>TIT</th>
+              <th>Ti-hFT</th>
               <th>EGDB-PG finetuned hFT-Transformer</th>
               <th>MT3-guitar&piano</th>
             </tr>
@@ -1136,7 +1135,7 @@
           <thead>
             <tr>
               <th>Label</th>
-              <th>TIT</th>
+              <th>Ti-hFT</th>
               <th>EGDB-PG finetuned hFT-Transformer</th>
               <th>MT3-guitar&piano</th>
             </tr>
