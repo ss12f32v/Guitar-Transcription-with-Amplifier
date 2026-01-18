@@ -155,7 +155,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Electric guitar recordings pose unique challenges for automatic music transcription due to the rich tone-related variations arisen from the employed guitar amplifiers, cabinets, and effect pedals, which collectively alter the sound character the guitar produces. Transcription models trained on small datasets with a limited palette of guitar tones may not generalize well to unseen tones. Due to the scarcity of labeled data, however, little work has thoroughly studied the effect of tones in electric guitar transcription. In this paper, we present a prototype benchmark and evaluation protocol for electric guitar transcription, training our transcription models using up to 256 presets of commercial-grade amplifier-cabinet combinations with different gain ranges, and testing the models on an unseen set of 6 out-of-domain presets. Moreover, we propose a new Transformer-based transcription model named tone-informed hierarchy Transformer (Ti-hFT) that incorporates representations of guitar tones as conditions to improve the model's adaptability to tone-related nuances. Experiments demonstrate the effectiveness of this tone-informed model over baselines and prior models, as well as the importance of increasing the tone and content variation of the training data for better generalizability.          </p>
+            Electric guitar recordings pose unique challenges for automatic music transcription due to the rich tone-related variations arisen from the employed guitar amplifiers, cabinets, and effect pedals, which collectively alter the sound character the guitar produces. Transcription models trained on small datasets with a limited palette of guitar tones may not generalize well to unseen tones. Due to the scarcity of labeled data, however, little work has thoroughly studied the effect of tones in electric guitar transcription.In this paper, we present a prototype benchmark and evaluation protocol for electric guitar transcription, training our transcription models using up to 256 presets of commercial-grade amplifier-cabinet combinations with different gain ranges, and testing the models on an unseen set of 6 out-of-domain presets. Moreover, we propose a new Transformer-based transcription model named tone-informed hierarchy frequency-time Transformer (Ti-hFT) that incorporates representations of guitar tones as conditions to improve the model's adaptability to tone-related nuances. Experiments demonstrate the effectiveness of this tone-informed model over baselines and prior models, as well as the importance of increasing the tone and content variation of the training data for better generalizability.      
+          </p>
         </div>
       </div>
     </div>
@@ -1393,6 +1394,28 @@ Electric guitar recordings pose unique challenges for automatic music transcript
   </div>
 </section>
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">EGDB-NDSP</h2>
+
+    <!-- Figure above the paragraph -->
+    <figure class="image" style="margin-bottom: 1rem;">
+      <img src="gains_regime.png" alt="RMS (dBFS) statistics for EGDB-PG and EGDB-NDSP across gain regimes">
+      <!-- Optional caption -->
+      <!-- <figcaption class="has-text-centered is-size-7">RMS (dBFS) statistics for EGDB-PG and EGDB-NDSP across gain regimes.</figcaption> -->
+    </figure>
+
+    <p class="has-text-centered">
+      To show that evaluation on EGDB-NDSP approximates such real-world variation, we add the table above and also released the download link for the EGDB-NDSP split.
+      The table reports the statistics of RMS level (dBFS) for EGDB-PG and EGDB-NDSP across gain regimes, indicating consistent level shifts between the datasets.
+      <br><br>
+      <strong>Link for EGDB-NDSP:</strong>
+      <a href="https://140.112.41.52:5003/sharing/BuNusSezL" target="_blank" rel="noopener noreferrer">Download</a>
+    </p>
+  </div>
+</section>
+
+  
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
